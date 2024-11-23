@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        h1 {
+            padding-left: 40px;
+            padding-top: 30px
+        }
+
+        body {
+            font-family: "Trebuchet MS", sans-serif
+        }
+        
+        .instructions {
+            padding-top: 6px;
+            padding-left: 60px;
+            margin-bottom: 20px
+        }
+
+        form {
+            display: inline-block;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 2px solid #000000;
+            line-height: 2;
+            position: absolute;
+            left: 50px;
+        }
+
+        label {
+            display: inline-block;
+            width: 130px;
+        }
+
+        input, select {
+            width: 300px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        .checkbox {
+            margin-left: 135px;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: #45a049;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 340px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .list {
+            display: inline-block;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            position: absolute;
+            top: 250px;
+            right: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 20px;
+            padding-left: 25px;
+            padding-bottom: 25px;
+        }
+
+        th {
+            color: white;
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Enrollment Form</h1>
+
+    <div class="instructions">
+        <h3>Instructions</h3>
+        <ol>
+            <li>Fill in the Forms.</li>
+            <li>Check your interests.</li>
+            <li>Click <b>"Enroll Now"</b> to submit</li>
+        </ol>
+    </div>
+
+    <div class="form">
+        <form>
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" min="0" max="99" required><br>
+
+            <label for="sex">Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female" required>
+            <label for="female">Female</label><br>
+
+            <label for="course">Course:</label>
+            <select id="course">
+                <option value="" disabled selected>Select a course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+                <option value="BTVTED">BTVTED</option>
+                <option value="ABELS">ABELS</option>
+                <option value="BSA">BSA</option>
+                <option value="BSAIS">BSAIS</option>
+                <option value="BSE">BSE</option>
+                <option value="DHRM">DHRS</option>
+            </select><br>
+
+            <label for="interest">Interests:</label>
+            <input type="checkbox" id="Web Development" name="Web Development" value="Web Development">
+            <label for="Web Development">Web Development</label><br>
+
+            <div class="checkbox">
+                <input type="checkbox" id="Data Science" name="Data Science" value="Data Science">
+                <label for="Data Science">Data Science</label><br>
+                <input type="checkbox" id="Networking" name="Networking" value="Networking">
+                <label for="Networking">Networking</label><br>
+                <input type="checkbox" id="Graphic Design" name="Graphic Design" value="Graphic Design">
+                <label for="Graphic Design">Graphic Design</label><br>
+            </div>
+
+            <button type="submit">Enroll Now!</button>
+        </form>
+    </div>
+
+    <div class="list">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Oliver Liwanag</td>
+                <td>oliverliwanag@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Patrick Lagaya</td>
+                <td>patricklagaya@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSA</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joshua Denado</td>
+                <td>joshuadehado@gmail.com</td>
+                <td>21</td>
+                <td>Male</td>
+                <td>BSSW</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Din Lienard Dudas</td>
+                <td>dinlienard@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Aaron Fade</td>
+                <td>aaronfade@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Graphic Design</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
